@@ -11,8 +11,6 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-    }
-    stages {
         stage('Deliver') {
             steps {
                 sh 'mvn jar:jar install:install help:evaluate -Dexpression=project.name'

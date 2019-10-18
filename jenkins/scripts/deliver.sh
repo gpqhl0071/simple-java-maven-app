@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env
 
 set -x
 mvn jar:jar install:install help:evaluate -Dexpression=project.name

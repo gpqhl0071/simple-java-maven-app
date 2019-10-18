@@ -21,4 +21,5 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 java -jar target/${NAME}-${VERSION}.jar
 
-scp target/${NAME}-${VERSION}.jar root@192.168.9.214:/gaopeng/
+#scp target/${NAME}-${VERSION}.jar root@192.168.9.214:/gaopeng/
+java -version
